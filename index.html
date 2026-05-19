@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hassan Scales — Media Buyer for brands that want to grow</title>
+<meta name="description" content="Hassan Scales is an independent media buyer running profitable paid-ads campaigns on Meta and TikTok for e-commerce brands and service providers." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="loader" id="loader" aria-live="polite" aria-label="Loading website">
+  <div class="loader-inner">
+    <div class="loader-mark">h.</div>
+    <div class="loader-bar"><span id="loaderBar"></span></div>
+    <div class="loader-row">
+      <span>Loading assets</span>
+      <span id="loaderPercent">0%</span>
+    </div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+
+<nav>
+  <div class="logo"><span class="dot"></span>HASSAN<span class="sub">.scales</span></div>
+  <ul>
+    <li><a href="#about" data-hover>About</a></li>
+    <li><a href="#services" data-hover>Pricing</a></li>
+    <li><a href="#results" data-hover>Results</a></li>
+    <li><a href="#faq" data-hover>FAQ</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="availability-badge" data-hover>
+      <span></span>
+      Taking 10 new clients
+    </div>
+    <button class="nav-cta" type="button" id="openCalendly" data-hover>Book a call →</button>
+    <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false" data-hover>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="snap-container" id="snapContainer">
+
+<div class="snap-section active" data-label="Intro">
+<header class="hero">
+  <div class="hero-meta">
+    <div>MEDIA BUYER — INDEPENDENT</div>
+    <div>BASED IN EGYPT</div>
+  </div>
+  <h1 class="reveal in">
+    I scale brands<br>
+    on <span class="accent">paid ads.</span><br>
+    <em>Not</em> <span class="strike">opinions.</span> <em>Numbers.</em>
+  </h1>
+  <div class="hero-foot">
+    <div class="description reveal delay-1">
+      Hi — I'm Hassan. I run profitable paid-ads campaigns on Meta and TikTok for e-commerce brands and service providers. No fluff dashboards, no agency layers. Just one operator, your ad account, and a plan to make it print.
+    </div>
+    <div class="reveal delay-1">
+      <div class="stat"><span class="count" data-count="100" data-decimals="0">0</span><span class="unit">k+</span></div>
+      <div class="stat-label">EGP ad spend managed</div>
+    </div>
+    <div class="reveal delay-2">
+      <div class="stat"><span class="count" data-count="8" data-decimals="0">0</span><span class="unit">x</span></div>
+      <div class="stat-label">Avg. account ROAS</div>
+    </div>
+    <div class="reveal delay-3">
+      <div class="stat"><span class="count" data-count="4" data-decimals="0">0</span></div>
+      <div class="stat-label">Brands scaled</div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Meta Ads</span><span>TikTok Ads</span><span>Creative Testing</span><span>Scaling Strategies</span><span>CRO</span><span>E-Commerce</span>
+    <span>Meta Ads</span><span>TikTok Ads</span><span>Creative Testing</span><span>Scaling Strategies</span><span>CRO</span><span>E-Commerce</span>
+  </div>
+</div>
+</div>
+
+<div class="snap-section" data-label="About">
+<section id="about">
+  <div class="section-head">
+    <div><div class="section-label reveal-left">01 — About</div></div>
+    <h2 class="reveal-blur">One goal.<br><em>Real growth.</em></h2>
+  </div>
+  <div class="about-grid">
+    <p class="reveal-blur">
+      For the past 8 months, I've been focused on helping <em>e-commerce brands</em> improve their performance through Meta ads, creative testing, and scaling strategies.<br><br>
+      From testing creatives and analyzing metrics to lowering costs and improving results, I focus on building campaigns that actually perform — not just look good on reports.<br><br>
+      No overcomplicated systems. No wasted ad spend. Just <em>data-driven strategies</em> focused on growth.
+    </p>
+    <div class="about-card reveal-right">
+      <h4>Stack & specialties</h4>
+      <ul>
+        <li>Primary <span>Meta Ads</span></li>
+        <li>Secondary <span>TikTok</span></li>
+        <li>Tracking <span>GA4 / Pixel</span></li>
+        <li>Industry <span>E-Commerce, Services</span></li>
+        <li>Experience <span>8 months</span></li>
+        <li>Languages <span>EN / AR</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="snap-section" data-label="Pricing">
+<section class="services" id="services">
+  <div class="section-head">
+    <div><div class="section-label reveal-left">02 — Engagements</div></div>
+    <h2 class="reveal-blur">Pick the<br>scope you <em>need.</em></h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="tier-name">Tier 01</div>
+      <div class="tier-title">Audit & <em>Action Plan</em></div>
+      <div class="price"><span class="currency">EGP</span>5,000</div>
+      <div class="price-sub">One-time fee</div>
+      <ul class="features">
+        <li>Full audit of your current ad accounts (Meta, TikTok)</li>
+        <li>Creative + funnel + tracking review</li>
+        <li>Written 20+ page action plan</li>
+        <li>60-min strategy call to walk through findings</li>
+        <li>7-day delivery</li>
+        <li>You execute — I hand off the playbook</li>
+      </ul>
+      <a href="https://calendly.com/hammamhassan394/30min?back=1&month=2026-05" target="_blank" rel="noopener" class="cta" data-hover>Start with an audit</a>
+    </div>
+    <div class="price-card featured reveal delay-1">
+      <div class="tier-name">Tier 02</div>
+      <div class="tier-title">Launch & <em>Scale</em></div>
+      <div class="price"><span class="currency">EGP</span>12,500</div>
+      <div class="price-sub">Per month · 3-month min.</div>
+      <ul class="features">
+        <li>Everything in Tier 01</li>
+        <li>I run your Meta + TikTok campaigns end-to-end</li>
+        <li>Weekly creative briefs + testing roadmap</li>
+        <li>Bi-weekly performance calls</li>
+        <li>Slack/WhatsApp access</li>
+        <li>Monthly reports — plain English, not dashboards</li>
+        <li>Up to 200k EGP/mo ad spend managed</li>
+      </ul>
+      <a href="https://calendly.com/hammamhassan394/30min?back=1&month=2026-05" target="_blank" rel="noopener" class="cta" data-hover>Book a discovery call</a>
+    </div>
+    <div class="price-card reveal delay-2">
+      <div class="tier-name">Tier 03</div>
+      <div class="tier-title">Full <em>Growth Partner</em></div>
+      <div class="price"><span class="currency">EGP</span>20,000</div>
+      <div class="price-sub">Per month · 6-month min.</div>
+      <ul class="features">
+        <li>Everything in Tier 02</li>
+        <li>All channels: Meta + TikTok at full scale</li>
+        <li>Embedded with your team — daily comms</li>
+        <li>Creative direction + UGC sourcing</li>
+        <li>Landing-page + CRO recommendations</li>
+        <li>Unlimited ad spend ceiling</li>
+        <li>Performance-based bonus structure available</li>
+      </ul>
+      <a href="https://calendly.com/hammamhassan394/30min?back=1&month=2026-05" target="_blank" rel="noopener" class="cta" data-hover>Talk about a partnership</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="snap-section" data-label="Results">
+<section id="results">
+  <div class="section-head">
+    <div><div class="section-label reveal-left">03 — Selected results</div></div>
+    <h2 class="reveal-blur">Receipts,<br><em>not promises.</em></h2>
+  </div>
+  <div class="results-grid">
+    <div class="proof-card span-7 reveal-scale">
+      <div class="proof-image"><img src="results/img-3602.jpg" alt="Shopify EGP 50,000 sales"></div>
+      <div class="proof-body">
+        <div class="brand"><span>E-Commerce Client · Shopify</span><span class="platform">META ADS</span></div>
+        <div class="big">EGP 50k<span class="plus"> sales</span></div>
+        <h3>From a fresh store to half-a-lakh in revenue.</h3>
+        <p class="desc">Built and scaled Meta campaigns from the ground up. Store hit EGP 50,000 in total sales across 88 orders, with revenue up 84% period-over-period.</p>
+        <div class="metrics">
+          <div class="metric"><div class="val">88</div><div class="lbl">Orders</div></div>
+          <div class="metric"><div class="val">+84%</div><div class="lbl">Sales growth</div></div>
+          <div class="metric"><div class="val">4.87%</div><div class="lbl">Conv. rate</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="proof-card span-5 reveal delay-1">
+      <div class="proof-image"><img src="results/img-3469.jpg" alt="Shopify EGP 32,910 sales"></div>
+      <div class="proof-body">
+        <div class="brand"><span>Earlier period · Same store</span><span class="platform">META ADS</span></div>
+        <div class="big">+85<span class="plus">%</span></div>
+        <h3>Steady compounding, not a one-off spike.</h3>
+        <p class="desc">EGP 32,910 in sales over 61 orders, +85% growth in the prior window. Same brand, same operator — consistent growth over consecutive periods.</p>
+      </div>
+    </div>
+    <div class="proof-card span-6 reveal">
+      <div class="proof-image"><img src="results/img-3468.jpg" alt="Meta Ads 58 conversations"></div>
+      <div class="proof-body">
+        <div class="brand"><span>Lead-Gen Campaign</span><span class="platform">META ADS</span></div>
+        <div class="big">EGP 13.83<span class="plus"> CPL</span></div>
+        <h3>Cheap, qualified conversations — at scale.</h3>
+        <p class="desc">58 messaging conversations and 9 purchases for EGP 802 in spend. Cost per conversation locked under EGP 14 across the full campaign window.</p>
+      </div>
+    </div>
+    <div class="proof-card span-6 reveal delay-1">
+      <div class="proof-image"><img src="results/img-3438.png" alt="Meta Ads 56 conversations"></div>
+      <div class="proof-body">
+        <div class="brand"><span>Lead-Gen Campaign</span><span class="platform">META ADS</span></div>
+        <div class="big">56<span class="plus"> convos</span></div>
+        <h3>Repeatable performance, period after period.</h3>
+        <p class="desc">EGP 801 spent · 56 conversations · 7 purchases. CPL held tight at EGP 14.31 — same playbook, same outcome, different month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="snap-section" data-label="Process">
+<section id="process">
+  <div class="section-head">
+    <div><div class="section-label reveal-left">04 — How we work</div></div>
+    <h2 class="reveal-blur">Four weeks.<br><em>Then we scale.</em></h2>
+  </div>
+  <div class="process-grid">
+    <div class="process-step"><div class="num">01</div><div><h3>Audit</h3><p>Account deep-dive, tracking check, competitor teardown, baseline metrics locked in.</p></div></div>
+    <div class="process-step"><div class="num">02</div><div><h3>Plan</h3><p>Creative angles, funnel structure, testing roadmap, and a clear KPI we're driving toward.</p></div></div>
+    <div class="process-step"><div class="num">03</div><div><h3>Launch</h3><p>Campaigns built, creatives shipped, tracking validated. Daily monitoring from day one.</p></div></div>
+    <div class="process-step"><div class="num">04</div><div><h3>Scale</h3><p>Winning creatives doubled down. Losers cut weekly. Spend ladder up only when math says yes.</p></div></div>
+  </div>
+</section>
+</div>
+
+<div class="snap-section" data-label="FAQ">
+<section id="faq">
+  <div class="section-head">
+    <div><div class="section-label reveal-left">05 — FAQ</div></div>
+    <h2 class="reveal-blur">Common<br><em>questions.</em></h2>
+  </div>
+  <div class="faq-item" data-hover>
+    <div class="q"><h3>Do you work with any niche?</h3><div class="toggle">+</div></div>
+    <div class="a">I focus on e-commerce brands and service providers — anywhere with a clear conversion event I can measure.</div>
+  </div>
+  <div class="faq-item" data-hover>
+    <div class="q"><h3>What's the minimum ad budget?</h3><div class="toggle">+</div></div>
+    <div class="a">You set your own ad spend — I work with whatever budget makes sense for your business.</div>
+  </div>
+  <div class="faq-item" data-hover>
+    <div class="q"><h3>Who owns the ad account?</h3><div class="toggle">+</div></div>
+    <div class="a">Campaigns run through my Business Manager — you keep full visibility into spend, performance, and reporting.</div>
+  </div>
+  <div class="faq-item" data-hover>
+    <div class="q"><h3>Do you produce the creative?</h3><div class="toggle">+</div></div>
+    <div class="a">I write the briefs and direct the angles. On Tier 03 I source UGC creators and manage production end-to-end.</div>
+  </div>
+  <div class="faq-item" data-hover>
+    <div class="q"><h3>How fast can we start?</h3><div class="toggle">+</div></div>
+    <div class="a">Audit kicks off within 48 hours of signing. Managed accounts go live 7–10 days after that.</div>
+  </div>
+</section>
+</div>
+
+<div class="snap-section" data-label="Contact">
+<section class="contact" id="contact">
+  <h2 class="reveal-blur">Let's make<br>your ads <em>print.</em></h2>
+  <div class="contact-row">
+    <div class="contact-col">
+      <h4>Email</h4>
+      <div class="big"><a href="mailto:h43789450@gmail.com" data-hover>h43789450@gmail.com</a></div>
+      <p style="margin-top:18px">I reply within 24 hours, Sun–Thu.</p>
+    </div>
+    <div class="contact-col">
+      <h4>Direct</h4>
+      <div class="big"><a href="https://wa.me/201026745745?text=Hi%20Hassan%2C%20I%27m%20interested%20in%20your%20media%20buying%20services." target="_blank" rel="noopener" data-hover>WhatsApp →</a></div>
+      <p style="margin-top:18px">+20 102 674 5745</p>
+      <p>Egypt</p>
+    </div>
+  </div>
+  <div class="contact-foot">
+    <div>
+      <div>© Hassan Scales 2026</div>
+      <div style="margin-top:8px;opacity:.6">Built independently. No agency.</div>
+    </div>
+    <div class="big-mark"><em>h.</em></div>
+    <div style="text-align:right">
+      <div><a href="https://instagram.com/hassanyousseff.1" target="_blank" rel="noopener" data-hover>Instagram</a></div>
+      <div><a href="#" data-hover>LinkedIn</a></div>
+      <div><a href="#" data-hover>X / Twitter</a></div>
+    </div>
+  </div>
+</section>
+</div>
+
+</div>
+
+<div class="wipe" id="wipe">
+  <div class="wipe-circle"></div>
+  <div class="wipe-content" id="wipeContent"></div>
+</div>
+
+<nav class="snap-progress" id="snapProgress"></nav>
+
+<div class="calendly-modal" id="calendlyModal" aria-hidden="true">
+  <div class="calendly-backdrop" data-close-calendly></div>
+  <div class="calendly-panel" role="dialog" aria-modal="true" aria-labelledby="calendlyTitle">
+    <div class="calendly-head">
+      <div>
+        <div class="calendly-kicker">Discovery call</div>
+        <h2 id="calendlyTitle">Book a time with Hassan</h2>
+      </div>
+      <button class="calendly-close" type="button" data-close-calendly aria-label="Close Calendly">×</button>
+    </div>
+    <iframe
+      id="calendlyFrame"
+      title="Book a call with Hassan"
+      data-src="https://calendly.com/hammamhassan394/30min?back=1&month=2026-05"
+    ></iframe>
+  </div>
+</div>
+
+<div class="scroll-hint" id="scrollHint">
+  <div>Scroll</div>
+  <div class="line"></div>
+</div>
+
+<div class="float-stack">
+  <a class="float-btn fb-ig" id="igFloat" href="https://instagram.com/hassanyousseff.1" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    <span class="fb-label">Follow on Instagram</span>
+  </a>
+  <a class="float-btn fb-wa" id="waFloat" href="https://wa.me/201026745745?text=Hi%20Hassan%2C%20I%27m%20interested%20in%20your%20media%20buying%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="fb-label">Chat on WhatsApp</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
